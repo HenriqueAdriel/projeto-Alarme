@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarme</title>
+    <div>
+        <label for="hora">Definir hora para notificação:</label>
+        <input type="time" id="hora" name="hora">
+        <button onclick="definirAlarme()">Definir</button>
+    </div>    
+    <script>function definirAlarme() {
+        const horaSelecionada = document.getElementById("hora").value;
+        const horaAtual = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+      
+        if (horaSelecionada === "") {
+            alert("Por favor, selecione uma hora para definir o alarme.");
+            return;
+        }
+      
+        if (horaSelecionada <= horaAtual) {
+            alert("A hora selecionada já passou. Por favor, selecione uma hora futura.");
+            return;
+        }
+      
+        // Aqui você pode adicionar a lógica para configurar o alarme ou notificação com a hora selecionada
+        // Por exemplo, você pode usar a API de Notificações do navegador para exibir uma notificação na hora selecionada
+        // Consulte a documentação da API de Notificações para obter mais informações
+      
+        alert("Alarme definido para " + horaSelecionada);
+    }
+    </script>
+    <script src="./service-worker.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Alarme/Notificação</h1>
+    <h2>programado para 00:00 as terças e quintas</h2>
+    <h2 id="clock">00:00:00</h2>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

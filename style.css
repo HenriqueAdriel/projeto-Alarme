@@ -1,0 +1,74 @@
+#clock {
+    font-size: 100px; 
+    text-align: center;
+    margin-top: 100px; 
+    color: #ffffff; 
+    font-family: Arial, sans-serif; 
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2c2c31;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #9e9e9e;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom,#141414e1, rgb(57, 57, 57));
+}
+
+/* Estilo para o container da definição da hora */
+div#hora-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Estilo para o rótulo */
+  label[for="hora"] {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  /* Estilo para a caixa de entrada de hora */
+  input[type="time"] {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+  }
+  
+  /* Estilo para o botão de definir */
+  button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #0073ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
