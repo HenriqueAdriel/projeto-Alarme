@@ -7,6 +7,11 @@
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
+.custom-h6 {
+  font-size: 16px;
+  color: darkorange;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -72,7 +77,3 @@ div#hora-container {
     background-color: #0056b3;
   }
 
-.custom-h6 {
-  font-size: 16px;
-  color: darkorange;
-}
