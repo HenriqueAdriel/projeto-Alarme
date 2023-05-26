@@ -71,4 +71,8 @@ div#hora-container {
   button:hover {
     background-color: #0056b3;
   }
-  
+
+.custom-h6 {
+  font-size: 16px;
+  color: darkorange;
+}
