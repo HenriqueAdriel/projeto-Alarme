@@ -1,3 +1,13 @@
+.custom-h6 {
+  font-size: 12px;
+  font-size: 16px;
+  color: blue;
+  position: absolute;
+  bottom: 0;
+}
+
+
+
 #clock {
     font-size: 64px; 
     text-align: center;
@@ -5,14 +15,6 @@
     color: #ffffff; 
     font-family: Arial, sans-serif; 
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-}
-
-.custom-h6 {
-  font-size: 12px;
-  font-size: 16px;
-  color: blue;
-  position: absolute;
-  bottom: 0;
 }
 
 ::-webkit-scrollbar {
