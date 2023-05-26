@@ -1,9 +1,10 @@
 .custom-h6 {
   font-size: 12px;
   font-size: 16px;
-  color: blue;
+  color: rgb(255, 255, 255);
   position: absolute;
   bottom: 0;
+  border: 1px solid yellow;
 }
 
 
